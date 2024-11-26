@@ -1,0 +1,105 @@
+/* Tổng quan */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    display: flex;
+    margin-left: -50%;
+    flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    width: 100%; /* Đảm bảo căn chỉnh đúng */
+    max-width: 450px; /* Giới hạn chiều rộng */
+}
+
+/* Tiêu đề */
+h1 {
+    white-space: nowrap; 
+    text-align: center; 
+    font-size: 2.1em; 
+    color: #333;
+    margin: 20px 0; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-weight: 700; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    text-align: center;
+}
+
+
+form input, form select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f7f7f7;
+    color: #555;
+}
+
+
+form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+form label {
+    font-size: 1.2em; /* Kích thước mặc định cho các nhãn */
+    font-weight: bold;
+    color: #333;
+}
+
+#result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8); /* Nền đen mờ */
+    color: #fff; /* Màu chữ trắng */
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px; /* Bo góc */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng chữ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bóng của container */
+    text-align: center;
+}
